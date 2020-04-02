@@ -1,0 +1,67 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "DELETE",
+                "uri": "http://172.20.0.112:4440/api/34/execution/84",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.23.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "X-Rundeck-Auth-Token": [
+                        "gSe7qynWEPNa4eEdyja6PXpKR3obDNlx"
+                    ],
+                    "Content-Length": [
+                        "0"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 204,
+                    "message": "No Content"
+                },
+                "headers": {
+                    "Content-Security-Policy": [
+                        "default-src 'none' ; script-src 'self' 'unsafe-inline' 'unsafe-eval' ; style-src 'self' 'unsafe-inline' ; img-src * ; font-src 'self' data: ; connect-src 'self' https://api.rundeck.com ; form-action 'self' ;"
+                    ],
+                    "X-Frame-Options": [
+                        "deny"
+                    ],
+                    "Set-Cookie": [
+                        "JSESSIONID=node0129x1wv7cvx0gafat8odw5fbt103.node0; Path=/; HttpOnly"
+                    ],
+                    "Expires": [
+                        "Thu, 01 Jan 1970 00:00:00 GMT"
+                    ],
+                    "Date": [
+                        "Thu, 02 Apr 2020 07:26:34 GMT"
+                    ],
+                    "X-XSS-Protection": [
+                        "1"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": ""
+                }
+            }
+        }
+    ]
+}

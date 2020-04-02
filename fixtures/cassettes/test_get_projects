@@ -1,0 +1,70 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://172.20.0.112:4440/api/34/projects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.23.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "X-Rundeck-Auth-Token": [
+                        "gSe7qynWEPNa4eEdyja6PXpKR3obDNlx"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Security-Policy": [
+                        "default-src 'none' ; script-src 'self' 'unsafe-inline' 'unsafe-eval' ; style-src 'self' 'unsafe-inline' ; img-src * ; font-src 'self' data: ; connect-src 'self' https://api.rundeck.com ; form-action 'self' ;"
+                    ],
+                    "X-Frame-Options": [
+                        "deny"
+                    ],
+                    "Set-Cookie": [
+                        "JSESSIONID=node017aaoi791x3fk2h89gq9onw2w100.node0; Path=/; HttpOnly"
+                    ],
+                    "Expires": [
+                        "Thu, 01 Jan 1970 00:00:00 GMT"
+                    ],
+                    "Date": [
+                        "Thu, 02 Apr 2020 07:26:34 GMT"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "X-XSS-Protection": [
+                        "1"
+                    ],
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "[{\"url\":\"http://172.20.0.112:4440/api/34/project/teste\",\"name\":\"teste\",\"description\":\"Teste Logs no Logstah\",\"label\":\"teste_logs\",\"created\":\"2020-03-27T22:41:03Z\"}]"
+                }
+            }
+        }
+    ]
+}

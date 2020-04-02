@@ -1,0 +1,63 @@
+[tool.poetry]
+name = "rundeck_executions_cleanup"
+version = "0.1.0"
+description = "Python CLI to remove old Rundeck executions and log files"
+authors = ["Lucas Souto <lucassouto@protonmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/instruct-br/rundeck_executions_cleanup"
+repository = "https://github.com/instruct-br/rundeck_executions_cleanup"
+keywords = ["rundeck", "logs", "executions", "CLI"]
+classifiers = [
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.23.0"
+click = "^7.1.1"
+click-log = "^0.3.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^19.10b0"
+pylint = "^2.4.4"
+ipython = "^7.13.0"
+ipdb = "^0.13.2"
+vcrpy = "^4.0.2"
+pytest-mock = "^3.0.0"
+flake8 = "^3.7.9"
+
+[tool.poetry.scripts]
+rundeck-executions-cleanup = 'rundeck_executions_cleanup:main'
+
+[tool.black]
+line-length = 79
+skip-string-normalization = true
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs
+    | \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

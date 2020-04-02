@@ -1,0 +1,70 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://172.20.0.112:4440/api/34/job/6000c4d1-64be-4052-9bf8-701920b368b4/executions/",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.23.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "X-Rundeck-Auth-Token": [
+                        "gSe7qynWEPNa4eEdyja6PXpKR3obDNlx"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Thu, 02 Apr 2020 07:28:39 GMT"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Content-Type": [
+                        "application/json;charset=utf-8"
+                    ],
+                    "Set-Cookie": [
+                        "JSESSIONID=node0imr7rsrxkib2xmshjwgk6hec106.node0; Path=/; HttpOnly"
+                    ],
+                    "Expires": [
+                        "Thu, 01 Jan 1970 00:00:00 GMT"
+                    ],
+                    "Content-Security-Policy": [
+                        "default-src 'none' ; script-src 'self' 'unsafe-inline' 'unsafe-eval' ; style-src 'self' 'unsafe-inline' ; img-src * ; font-src 'self' data: ; connect-src 'self' https://api.rundeck.com ; form-action 'self' ;"
+                    ],
+                    "X-Frame-Options": [
+                        "deny"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "X-XSS-Protection": [
+                        "1"
+                    ]
+                },
+                "body": {
+                    "string": "{\"paging\":{\"count\":2,\"total\":2,\"offset\":0,\"max\":20},\"executions\":[{\"id\":108,\"href\":\"http://172.20.0.112:4440/api/34/execution/108\",\"permalink\":\"http://172.20.0.112:4440/project/teste/execution/show/108\",\"status\":\"failed\",\"project\":\"teste\",\"executionType\":\"user\",\"user\":\"admin\",\"date-started\":{\"unixtime\":1585812163596,\"date\":\"2020-04-02T07:22:43Z\"},\"date-ended\":{\"unixtime\":1585812164143,\"date\":\"2020-04-02T07:22:44Z\"},\"job\":{\"id\":\"6000c4d1-64be-4052-9bf8-701920b368b4\",\"averageDuration\":2074,\"name\":\"Curl no Elasticsearch\",\"group\":\"\",\"project\":\"teste\",\"description\":\"\",\"href\":\"http://172.20.0.112:4440/api/34/job/6000c4d1-64be-4052-9bf8-701920b368b4\",\"permalink\":\"http://172.20.0.112:4440/project/teste/job/show/6000c4d1-64be-4052-9bf8-701920b368b4\"},\"description\":\"curl http://localhost:9200/\",\"argstring\":null,\"failedNodes\":[\"172.20.0.112\"]},{\"id\":88,\"href\":\"http://172.20.0.112:4440/api/34/execution/88\",\"permalink\":\"http://172.20.0.112:4440/project/teste/execution/show/88\",\"status\":\"failed\",\"project\":\"teste\",\"executionType\":\"user\",\"user\":\"admin\",\"date-started\":{\"unixtime\":1585812064899,\"date\":\"2020-04-02T07:21:04Z\"},\"date-ended\":{\"unixtime\":1585812065436,\"date\":\"2020-04-02T07:21:05Z\"},\"job\":{\"id\":\"6000c4d1-64be-4052-9bf8-701920b368b4\",\"averageDuration\":2074,\"name\":\"Curl no Elasticsearch\",\"group\":\"\",\"project\":\"teste\",\"description\":\"\",\"href\":\"http://172.20.0.112:4440/api/34/job/6000c4d1-64be-4052-9bf8-701920b368b4\",\"permalink\":\"http://172.20.0.112:4440/project/teste/job/show/6000c4d1-64be-4052-9bf8-701920b368b4\"},\"description\":\"curl http://localhost:9200/\",\"argstring\":null,\"failedNodes\":[\"172.20.0.112\"]}]}"
+                }
+            }
+        }
+    ]
+}
