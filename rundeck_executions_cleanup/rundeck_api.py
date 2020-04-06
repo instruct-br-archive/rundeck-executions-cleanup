@@ -44,7 +44,7 @@ class RundeckAPI:
         if response.status_code == 200:
             return [project['name'] for project in response.json()]
 
-        LOGGER.error('Não existe projetos criados')
+        LOGGER.error('No project created')
         return []
 
     def get_project(self, name):
@@ -52,7 +52,7 @@ class RundeckAPI:
         if response.status_code == 200:
             return response.json()
 
-        LOGGER.error('Projeto %s não existe', name)
+        LOGGER.error('%s project does not exist', name)
         return ''
 
     def get_job_ids_for_project(self, project_name):
@@ -62,7 +62,7 @@ class RundeckAPI:
         if response.status_code == 200:
             return [job['id'] for job in response.json()]
 
-        LOGGER.error('Nenhum job para o projeto %s encontrado', project_name)
+        LOGGER.error('No jobs for the %s project found', project_name)
         return []
 
     def get_executions_for_job(self, job_id):
@@ -72,7 +72,7 @@ class RundeckAPI:
             executions = response.json()['executions']
             return [execution['id'] for execution in executions]
 
-        LOGGER.error('Nenhuma execução para o job %s encontrada', job_id)
+        LOGGER.error('No executions for the %s job found', job_id)
         return []
 
     def get_executions_for_project(self, project_name, filters=None):
@@ -87,7 +87,7 @@ class RundeckAPI:
             return [execution['id'] for execution in executions]
 
         LOGGER.error(
-            'Nenhuma execução para o projeto %s com os parâmetros %s encontrada',  # noqa: E501
+            'No executions for the %s project with the parameters %s found',
             project_name,
             filters,
         )

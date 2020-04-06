@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "rundeck_executions_cleanup"
-version = "0.1.1"
+version = "0.1.2"
 description = "Python CLI to remove old Rundeck executions and log files"
 authors = ["Lucas Souto <lucassouto@protonmail.com>"]
 license = "MIT"
