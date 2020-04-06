@@ -5,7 +5,7 @@ import click_log
 
 from rundeck_executions_cleanup.rundeck_api import RundeckAPI
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 LOGGER = logging.getLogger(__name__)
 click_log.basic_config(LOGGER)
