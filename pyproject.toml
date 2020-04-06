@@ -5,8 +5,8 @@ description = "Python CLI to remove old Rundeck executions and log files"
 authors = ["Lucas Souto <lucassouto@protonmail.com>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/instruct-br/rundeck_executions_cleanup"
-repository = "https://github.com/instruct-br/rundeck_executions_cleanup"
+homepage = "https://github.com/instruct-br/rundeck-executions-cleanup"
+repository = "https://github.com/instruct-br/rundeck-executions-cleanup"
 keywords = ["rundeck", "logs", "executions", "CLI"]
 classifiers = [
     "Environment :: Console",
