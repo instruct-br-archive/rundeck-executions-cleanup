@@ -5,7 +5,7 @@ from rundeck_executions_cleanup.rundeck_api import RundeckAPI
 
 vcr = vcr_lib.VCR(
     serializer='json',
-    cassette_library_dir='fixtures/cassettes',
+    cassette_library_dir='tests/fixtures/cassettes',
     record_mode='once',
     match_on=['uri', 'method'],
 )
